@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rclone-pi — personal Google Drive client</title>
+    <style>
+      body { font: 16px/1.6 system-ui, sans-serif; max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; }
+      code { background: #f2f2f2; padding: 0.1em 0.35em; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>rclone-pi</h1>
+
+    <p>
+      This is a private, single-user OAuth client. It exists so that
+      <a href="https://rclone.org/">rclone</a> — running on its owner's own Raspberry Pi — can read
+      that same person's own Google Drive.
+    </p>
+
+    <p>Specifically, it mounts one folder of the owner's Drive as a read-only library for a
+      self-hosted audiobook server on the same machine.</p>
+
+    <ul>
+      <li>One user: the account owner, who is also the developer of this client.</li>
+      <li>Not distributed, not offered as a service, no other users.</li>
+      <li>No analytics, no telemetry, no third-party services.</li>
+      <li>Data flows only between the owner's own device and the owner's own Google Drive.</li>
+      <li>The grant is read-only: <code>drive.readonly</code>.</li>
+    </ul>
+
+    <p>Privacy policy: <a href="privacy.html">privacy.html</a></p>
+  </body>
+</html>
